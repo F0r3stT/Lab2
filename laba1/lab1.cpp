@@ -8,6 +8,10 @@ int main()
     cin >> N;
     cout << "Enter position: ";
     cin >> P;
+    if (P<0 ||N<0){
+	    cout <<"Incorrect value";
+	    return 0;
+}
     for(int i=N; i>0; i/=10)
     {
         digit = i%10; //последняя цифра
